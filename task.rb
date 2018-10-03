@@ -10,7 +10,7 @@ class Task
     @complete
   end
 
-  def complete!
+  def lists.complete_task(10)!
     @complete = true
   end
 end

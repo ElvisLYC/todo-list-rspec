@@ -1,7 +1,7 @@
 class List
   attr_reader :title, :tasks
 
-  def initialize(title, tasks = [])
+  def initialize(title, tasks=[])
     @title = title
     @tasks = tasks
   end
@@ -11,10 +11,15 @@ class List
   end
 
   def complete_task(index)
+    # if index > tasks.length-1
+    #   raise_error (Argument)
+    # else
     tasks[index].complete!
+    # end
   end
 
   def delete_task(index)
+    #tasks.order(:description)
     tasks.delete_at(index)
   end
 
